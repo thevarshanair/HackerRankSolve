@@ -1,0 +1,18 @@
+<a href="#contact" onclick="function()" data-index="0">Send a mail to mother!</a>
+<a href="#contact" onclick="function()" data-index="1">Send a mail to father!</a>
+<a href="#contact" onclick="function()" data-index="2">Send a mail to sister!</a>
+<a href="#contact" onclick="function()" data-index="3">Send a mail to brother!</a>
+
+<form id="contact">
+    <select id="recipient">
+        <option value="mother@mail.com">Mother</option>
+        <option value="father@mail.com">Father</option>
+        <option value="sister@mail.com">Sister</option>
+        <option value="brother@mail.com">Brother</option>
+    </select>
+</form>
+<script type="text/javascript">
+$("a").click(function(){
+    $("#recipient").prop("selectedIndex", $(this).data("index"));
+});
+</script>
